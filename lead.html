@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lead.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body style="background-color: lavender;">
+    <div>
+<div class="pic">
+  <img src="pic-removebg-preview.png" alt="" height="500px">
+</div>
+        <div class="container">
+          <div class="valentines">
+            <div class="envelope"></div>
+            <div class="front"></div>
+            <div class="card">
+              <div class="text"> Will you</br> be my </br>Val?</div>
+              <div class="heart" </div>
+              </div>
+              <div class="hearts">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+                <div class="five"></div>
+              </div>
+            </div>
+          </div>
+          <div class="shadow"></div>
+        </div>
+        <div>
+        <div class = "buttons-container">
+        <button class="button" onclick="location.href='accept.html'" style="background-color: #d62828;">Yes</button>
+        <button class="button" onclick="location.href='reject.html'"  style="background-color: #d62828;">No</button>
+        </div>
+
+
+<script>
+    function nextPage() {
+  window.location.href = "yes.html";
+}
+$(document).ready(function () {
+  $(".container")
+    .mouseenter(function () {
+      $(".card").stop().animate(
+        {
+          top: "-90px"
+        },
+        "slow"
+      );
+    })
+    .mouseleave(function () {
+      $(".card").stop().animate(
+        {
+          top: 0
+        },
+        "slow"
+      );
+    });
+});
+</script>
+
+
+
+
+
+
+</body>
+</html>
